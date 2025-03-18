@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <script src="script.js"></script>
+  <title>Alina Cruz Portfolio</title>
+</head>
+<body>
+  <nav>
+    <ul class="navbar" id="navbar">
+      <li><a href="#about.html">Alina Cruz</a></li>
+      <li><a href="#contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="sidebar">
+    <ul class="menu">
+     
+      <span class="menu-title" onclick="toggleSubMenu('hamburger')">  </span>
+       <li class="menu">
+        
+      <span class="hamburger" onclick="toggleSidebar()">&#9776;
+</span>
+         <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+     </li>
+
+
+      <li class="menu-item">
+       
+
+
+        <span class="menu-title" onclick="toggleSubMenu('work')">WORK</span>
+        <ul class="submenu" id="work">
+          <li class="submenu-item">
+            <span class="menu-title"><a href="painting.html" target="blank">Painting</a></span>
+                      </li>
+
+          <li class="submenu-item">
+            <span class="menu-title"><a href="digital.html" target="blank">Digital</a></span>
+                    </li>
+          
+                    <li class="submenu-item">
+                      <span class="menu-title"><a href="sculpture.html" target="blank">Sculpture</a></span>
+           
+          </li>
+          
+          </li>
+          <li class="submenu-item">
+            <span class="menu-title"><a href="live_performance.html" target="blank">Live Performance</a></span>
+                    </li>
+          
+        
+          </ul>
+          </li>
+      
+        </ul>
+          
+        </li>
+      
+          
+  
+      <li class="menu-item">
+        <span class="menu-title" onclick="toggleSubMenu('news')"><a href="https://example.com/project1" target="_blank">News</a></span>
+        <ul class="submenu" id="news"></ul>
+      </li><!---hide later no news as of 3-18-25---->
+      <li class="menu-item">
+        <span class="menu-title" onclick="toggleSubMenu('about')"><a href="about.html" target="_blank">About</a></span>
+        <ul class="submenu" id="about"></ul>
+      </li>
+    </ul>
+  </div>
+
+
+
+  <div class="hero">
+    <h1>Alina Cruz</h1>
+    <h2>Multidisciplinary Artist</h2>
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="P002_Still_Life_color.png" alt="Still life chromatic">
+        <div class="caption">Still Life- Chromatic</div>
+      </div>
+      <div class="slide fade">
+        <img src="S003_tree_of_life 01.png" alt="Tree made of wires and plaster">
+        <div class="caption">Tree of Life</div>
+      </div>
+      <div class="slide fade">
+        <img src="C001_The_Art_of_Distraction.png" alt="print of a hand reaching for a cube">
+        <div class="caption">The Art of Distraction</div>
+      </div>
+      <div class="slide fade">
+        <img src="path/to/your/image1.jpg" alt="Work 1"><!---diggital work adddd-->
+        <div class="caption">Lovers, Self Portrait</div>
+      </div>
+      <div class="slide fade">
+        <img src="S006-Escape-03.png" alt="bench/ booknook seating green vines incase the seating">
+        <div class="caption">Escape</div>
+      </div>
+  
+      <!-- Navigation Arrows -->
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+    </div>
+    <script src="script.js"></script>
+</div>
+  
+</div>
+  
+  
+
+
+
+<footer>
+   <div class="left" id="footer">
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+      </div>
+    
+    
+    <div class="center" id="footer"><section class="#link_up" >
+       <a class="main-section" id="link_up">
+      <p>Contact</p>
+          </div>
+     
+      <brk></brk>
+  <div class="right" id="footer">
+    <p>&copy; 2025</p>
+   
+  </div>  
+  
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,630 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  
+  
+  .navbar {
+        width: 100%;
+            display: flex;
+       text-align: right;
+        padding: 10px 10px;
+        position: fixed;
+          top: 0;
+        left: 0;
+      list-style-type: none;  
+    max-width: 760rem;
+    font-family: Oleo Script, system-ui;
+  font-size: 0.6em;
+  font-style: normal;
+  background-color: #ffffff; /* Background color for the navbar */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    z-index: 1000; /* Ensure navbar is above other content */
+    justify-content: flex-end; /* Align items to the right */ 
+  }
+  
+  .navbar li {
+      margin: auto; 
+   }
+  
+  .navbar a {
+      color: #000000; 
+      text-decoration: none; 
+      font-size: 1rem;
+      padding: 10px 20px;/* Text color 
+      transition: background-color 0.3s ease; 
+    */
+    border-radius: 25px;
+  }
+  
+  .navbar a:hover {
+      /*ackground-color: #249E3B;
+      border-radius: 45px;*/
+    color: #BD3FF5;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+        }
+  
+  
+  
+  
+  .sidebar {
+    width: 250px;
+    position: fixed;
+    justify-content: flex-start;
+    top: 0.5rem;
+    left: 0;
+    height: 100%;
+    padding-top: 5.5rem; 
+    padding-left: 2rem;
+    color: #000000;
+   /* font-family: Arial, sans-serif;
+    list-style-type: none;*/
+    transform: translateX(-100%); /* Hide sidebar initially */
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0); /* Show sidebar when open */
+  }
+  
+  .hamburger {
+    display: none; /* Hide hamburger by default */
+  }
+  
+       /*background-color: #f9f9f9; Add background color to sidebar */
+  /*  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+     transform: translateX(-100%); Hide sidebar initially */
+  /*   transition: transform 0.3s ease; Smooth transition */
+    
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+        margin: 0;
+  }
+  
+  
+  
+  .menu-item {
+    margin: 1rem 0;
+    list-style-type: none; 
+  }
+  
+  .menu-title {
+    display: block;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    
+   }
+  
+  .menu-item li:hover {
+     color: #BD3FF5;
+  }
+  
+  .submenu, .menu-title, .submenu-item {
+    font-family: "Jaini", system-ui;/**/
+  font-size: 1.2em;
+  font-style: normal;
+  }
+  
+  .submenu {
+    display: none;
+    /*list-style-type: none;*/
+    padding: 0;
+    margin: 0;
+    padding-left: 0.6rem;
+  }
+  
+  .submenu li {
+    list-style-type: none;
+    display: block;
+    padding: 0.3rem 0;
+     padding-left: 1.5rem;
+  }
+  
+  .submenu li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .submenu li a:hover {
+    color: #BD3FF5;
+  }
+  
+  
+  /*
+  .submenu li:hover {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  }8?*/
+  
+  
+  
+  .menu-title a {
+  text-decoration: none;
+  color: #000000;
+  }
+  /* Remove underline and change color for News and About links */
+  /*
+  .menu-title a:hover {
+  color: #BD3FF5;
+  }
+    
+    .menu-item {
+  list-style-type: none;
+  }*/
+  
+    .hamburger {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 1;
+      display: block;
+      
+    }
+  
+  
+    .submenu li {
+      font-size: 0.9rem;
+      padding: 6px 15px;
+  }
+  
+  /*
+  .hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1;
+  }*/
+  
+  
+  
+  /*
+  @media screen and (min-width: 769px) {
+    .sidebar {
+      width: 250px;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  }   */
+  
+  .menu-title a:hover {
+  color: #BD3FF5;
+  }
+  
+  /*
+  .hamburger {
+  display: none;
+  }*/
+  
+  
+  
+  .menu {  
+  position: relative;
+  }
+  
+  html, body {
+    height: 100%; /* Make sure the body takes up the full height of the viewport */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero {
+    display: flex;
+  width: 100%;
+  height: 75vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px; /* Minimum width for mobile */
+  max-width: 800px; /* Maximum width for desktop */
+  padding: 5px;
+  margin: 10px;
+  margin-top: 60px; /* Add spacing from the top */
+  box-sizing: border-box; 
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+  }
+  
+  
+  /* .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35vh;
+    position: relative;
+    overflow: hidden;
+  } */
+  
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .fade {
+    animation: fadeEffect 1.5s;
+  }
+  
+  @keyframes fadeEffect {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+  }
+  
+  h1, p, h2, h3 {
+    font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    color: #333;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #555;
+  }
+  
+  
+  .image-item img {
+    width: 100%; /* Ensure images fit within their container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't exceed container width */
+    object-fit: contain; /* Ensure the image fits within the container */
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 5px;
+  }
+  
+  .image-item {
+    display: block;
+    text-align: center; /* Ensures the description is centered */
+    margin: 15px 0; /* Add some space between the image and the description */
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-image:hover {
+    transform: scale(1.75); /* Increase scale for hover effect */
+  }
+  
+  
+  .image-description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 8px;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+   /* align-items: center;
+    justify-content: center;
+    flex-direction: column;*/
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-image {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
+  .modal-description {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 15px;
+  }
+  
+  .modal-nav {
+    margin-top: 20px;
+  }
+  
+  .nav-btn {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  border-radius: 15px;
+  }
+  
+  .nav-btn:hover {
+    background-color: #ddd;
+  }
+  
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .gallery-view-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+  border-radius: 15px;
+  }
+  
+  .gallery-view-btn:hover {
+    background-color: #ddd;
+  }
+  
+  @media (min-width: 768px) {
+    .image-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+  
+    .image-description {
+        text-align: left;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+  
+    .image-item img {
+        width: 100%;/*dud sine here*/
+        max-width: 100vh; /* Set a max width for larger screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .image-item {
+        display: block;
+        text-align: center;
+    }
+  
+    .image-description {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+  
+    .image-item img {
+        width: 100%;
+        max-width: 100%;
+    }
+  }
+  
+  
+  /* Centered container */
+  .container {
+   display: flex;
+  width: 100%;
+  height: 75vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px; /* Minimum width for mobile */
+  max-width: 800px; /* Maximum width for desktop */
+  padding: 10px;
+  margin: 0;
+  /*padding-top: 1em;
+  margin-top: 1em;*/
+  /*background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 60px;*/
+  text-align: center;
+  
+  }
+  .container {
+    display: flex;
+  
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Centered footer fix thiss footer issue place bottom  */
+  footer {
+   position: bottom;
+  width: 85%;
+    display: fixed;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    /*max-width: 360vh;
+   min-width: 100vh;*/
+  }
+  
+  footer .left, footer .right, footer .center {
+  display: flex;
+  align-items: center;
+  
+  }
+  
+  footer .left a, footer .right a, footer .center a {
+  color: #C2BDF0;
+  text-decoration: none;
+  margin: 0 10px;
+  }
+  
+  footer .left a:hover, footer .right a:hover, footer .center a:hover {
+  color: #000000;
+  }
+  
+  footer .left {
+  justify-content: flex-start;
+  }
+  
+  footer .center {
+  justify-content: center;
+  text-align: center;
+  line-height: 1px;
+  }
+  
+  footer .right {
+  justify-content: flex-end;
+  }
+  
+  /*dont TOUchhhh*/
+  @media (max-width: 768px) {
+      .navbar {
+          flex-direction: column; 
+          align-items: center; 
+      }
+  
+      .navbar li {
+          margin: 10px 0;
+      }
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 0;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+  
+    .sidebar.open {
+      width: 250px;
+    }
+  
+    .submenu {
+      display: none;
+    }
+  
+    .menu-title {
+      font-size: 1rem;
+      padding: 8px 10px;
+        list-style-type: none;
+    }
+  }
+    
+  
+  @media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  
+  .sidebar {
+    width: 250px;
+    transform: translateX(0); /* Hide sidebar initially */
+  }
+  
+  /* .sidebar.open {
+    width: 250px;
+    transform: translateX(0); /* Show sidebar when open 
+  } */
+  }
+  
+  @media screen and (min-width: 769px) {
+  .sidebar {
+    width: 15vh;
+    transform: translateX(0); 
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  }
+  
+  
